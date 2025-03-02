@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialogBackground">#FFFFFF</color>
+    <color name="primaryColor">#0000FF</color>
+    <color name="secondaryColor">#FF00FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pale_blue">#ADD8E6</color>
+    <color name="navy_blue">#000080</color>
+    <color name="light_blue">#add8e6</color>
+    <color name="deep_indigo">#3F51B5</color>
+    <color name="dark_indigo">#303F9F</color>
+    <color name="light_yellow">#FFF9C4</color>
+    <color name="light_green">#A5D6A7</color>
+    <color name="light_red">#EF9A9A</color>
+    <color name="primary_color">#3F51B5</color>
+    <color name="teal">#009688</color>
+    <color name="dark_teal">#00796B</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="charcoal">#212121</color>
+    <color name="royal_blue">#4169E1</color>
+    <color name="dark_royal_blue">#27408B</color>
+    <color name="emerald_green">#50C878</color>
+    <color name="dark_emerald_green">#3A8E5A</color>
+    <color name="sunset_orange">#FF4500</color>
+
+
+</resources>

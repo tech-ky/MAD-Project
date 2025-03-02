@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Define Circular Shape Appearance -->
+<style name="CircularShape">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item> <!-- 50% for perfect circle -->
+</style>
+</resources>

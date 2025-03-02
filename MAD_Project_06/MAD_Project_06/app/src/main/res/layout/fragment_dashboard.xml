@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".placeholder.DashboardFragment">
+
+    <FrameLayout
+        android:id="@+id/addweight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:background="@color/light_gray"
+        tools:context=".placeholder.DashboardFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <!-- Date TextView -->
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"/>
+
+            <!-- Calories CardView -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="253dp"
+                        android:orientation="vertical">
+
+                        <!-- Header Row for Calories Section -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/dark_indigo"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Calories"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!-- Content Section with Pie Chart and Info -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="164dp"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/chart_pie"
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:orientation="vertical">
+
+                                <!-- Goal Section -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="8dp">
+
+                                    <ImageButton
+                                        android:id="@+id/EditGoal"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:background="?android:attr/selectableItemBackground"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/goalflag" />
+
+                                    <TextView
+                                        android:id="@+id/goaltext"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <!-- Food Intake Section -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="8dp">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton2"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:background="?android:attr/selectableItemBackground"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/gaincal" />
+
+                                    <TextView
+                                        android:id="@+id/food_cal_text"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+
+                                <!-- Burn Calories Section -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <!-- Reminder CardView -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/dark_indigo"
+                        android:text="Set Reminder"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/setReminder"
+                            android:layout_width="18dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:padding="5dp"
+                            android:paddingTop="20dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/schedule" />
+
+                        <TextView
+                            android:id="@+id/DashboardTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginRight="80dp"
+                            android:text="time"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- Weight CardView -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_marginTop="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <!-- Header Row for Weight Section -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/deep_indigo"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:paddingStart="16dp">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Weight"
+                                android:textColor="@color/white"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:layout_weight="1"/>
+
+                            <Button
+                                android:id="@+id/EditWeightGraph"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Edit"
+                                android:background="@drawable/button_selector"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                        </LinearLayout>
+
+                        <!-- Bar Chart for Weight -->
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/weightgraph"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

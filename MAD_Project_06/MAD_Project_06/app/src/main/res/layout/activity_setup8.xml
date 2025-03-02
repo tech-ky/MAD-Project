@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A3A"
+    tools:context=".setup8">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Goals"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Progress Bar -->
+    <LinearLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text">
+
+        <!-- Active Step -->
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#4CAF50" />
+
+        <!-- Inactive Steps -->
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#4CAF50" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#D3D3D3" />
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="#D3D3D3" />
+    </LinearLayout>
+
+    <!-- Question Heading -->
+    <TextView
+        android:id="@+id/question_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just a few more questions"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="130dp"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- How tall are you? -->
+    <TextView
+        android:id="@+id/height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How tall are you?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/question_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_field_background"
+        android:hint="Enter height"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#B8B8B8"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/height_unit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/height_label" />
+
+    <TextView
+        android:id="@+id/height_unit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/unit_background"
+        android:text="cm"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/height_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- How much do you weigh? -->
+    <TextView
+        android:id="@+id/weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much do you weigh?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/height_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_field_background"
+        android:hint="Enter weight"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#B8B8B8"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/weight_unit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weight_label" />
+
+    <TextView
+        android:id="@+id/weight_unit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/unit_background"
+        android:text="kg"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/weight_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- Goal Weight -->
+    <TextView
+        android:id="@+id/goal_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your goal weight?"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/weight_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/goal_weight_input"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/input_field_background"
+        android:hint="Enter goal weight"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="#B8B8B8"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/goal_weight_unit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goal_weight_label" />
+
+    <TextView
+        android:id="@+id/goal_weight_unit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/unit_background"
+        android:text="kg"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/goal_weight_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="24dp"/>
+
+    <!-- Bottom Text -->
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't worry, you can always change this later."
+        android:textColor="#B8B8B8"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/goal_weight_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="28dp"/>
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back_button_background"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:contentDescription="Back"/>
+
+    <!-- Next Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

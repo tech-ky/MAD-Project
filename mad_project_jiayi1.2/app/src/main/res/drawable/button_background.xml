@@ -1,0 +1,27 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State for when the button is pressed -->
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#0CBAD8"/>
+            <corners android:radius="16dp"/> <!-- Adjust this value for more or less rounded corners -->
+        </shape>
+    </item>
+
+    <!-- State for when the button is focused -->
+    <item android:state_focused="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#0CB9D7"/>
+            <corners android:radius="16dp"/> <!-- Adjust this value for more or less rounded corners -->
+        </shape>
+    </item>
+
+    <!-- Default state (when the button is neither pressed nor focused) -->
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#0CB1CE"/>
+            <corners android:radius="16dp"/> <!-- Adjust this value for more or less rounded corners -->
+        </shape>
+    </item>
+</selector>
+
+

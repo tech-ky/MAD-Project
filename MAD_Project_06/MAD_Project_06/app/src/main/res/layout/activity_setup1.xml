@@ -1,0 +1,99 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setup_background"
+    tools:context=".setup1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/goaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#AEAEAE"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/food_cal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:height="220dp"
+            android:gravity="center"
+            android:paddingTop="150dp"
+            android:text="Welcome! Let's customize FitBro for your goals!"
+            android:textColor="#B8B8B8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Continue Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continue_btn"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/box"
+            android:backgroundTint="@null"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#602828"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- OR Divider -->
+        <TextView
+            android:id="@+id/or_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="#CFCFCF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/continue_google"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box1"
+            android:gravity="center"
+            android:hint="Continue with Google"
+            android:inputType="textEmailAddress"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/continue_apple"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box1"
+            android:gravity="center"
+            android:hint="Continue with Apple"
+            android:inputType="textEmailAddress"
+            android:padding="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

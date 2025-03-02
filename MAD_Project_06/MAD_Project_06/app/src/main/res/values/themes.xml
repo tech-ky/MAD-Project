@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MAD_Project" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors: A bold and modern blue for the primary theme -->
+        <item name="colorPrimary">@color/royal_blue</item>
+        <item name="colorPrimaryVariant">@color/dark_royal_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary colors: A complementary green for highlights -->
+        <item name="colorSecondary">@color/emerald_green</item>
+        <item name="colorSecondaryVariant">@color/dark_emerald_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.MAD_Project" parent="Base.Theme.MAD_Project" />
+</resources>

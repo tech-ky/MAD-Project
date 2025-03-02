@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069717885663",
+    "project_id": "fitbro-f45b2",
+    "storage_bucket": "fitbro-f45b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069717885663:android:8aa65b0669057f7dc34f6a",
+        "android_client_info": {
+          "package_name": "com.sp.mad_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz8Mlgn4Gnq2SzPbEiHcBHq7HNc9m30jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <!-- Other string resources -->
+    <string name="app_name">Fitbro</string>
+    <string name="radio_text">
+        <![CDATA[
+            <b>Not Very Active</b><br>
+            <font style="font-weight:normal;">Spend most of the day sitting (e.g., office work, desk job)</font>
+        ]]>
+    </string>
+</resources>
+
+

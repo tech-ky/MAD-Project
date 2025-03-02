@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A3A"
+    tools:context=".plan_start">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:contentDescription="Back"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/workout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small Steps"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/workout_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 minutes HIIT workout | 7 days"
+        android:textColor="#CFCFCF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/workout_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Day Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/day_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day 1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button_plans"
+        app:layout_constraintTop_toBottomOf="@id/workout_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Workout Steps List -->
+    <LinearLayout
+        android:id="@+id/workout_steps_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/day_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exercise1"
+            android:layout_gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="1 minute Burpees"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exercise_button_plans"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rest1"
+            android:layout_width="340dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="30 seconds rest"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exercise_button_plans"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exercise2"
+            android:layout_width="340dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="1 minute High Knees"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exercise_button_plans"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rest2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="30 seconds rest"
+            android:textColor="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exercise_button_plans"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exercise3"
+            android:layout_height="wrap_content"
+            android:text="1 minute Mountain Climbers"
+            android:textColor="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exercise_button_plans"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rest3"
+            android:layout_height="wrap_content"
+            android:text="30 seconds rest"
+            android:textColor="#FFFFFF"
+            android:layout_width="340dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/exercise_button_plans"/>
+    </LinearLayout>
+
+    <!-- Set Count Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sets_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="3 sets"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@drawable/sets_button_plans"
+        app:layout_constraintTop_toBottomOf="@id/workout_steps_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button_plans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
